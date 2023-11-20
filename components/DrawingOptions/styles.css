@@ -1,0 +1,17 @@
+.drawing-options{
+    position: fixed;
+    bottom: 0;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+}
+
+.options-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+input{
+    color: black;
+}

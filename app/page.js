@@ -6,6 +6,7 @@ import CanvasComponent from '@/components/Canvas'
 import Image from 'next/image'
 import { useState } from 'react'
 import { canvasCurrentProvider } from '@/context/canvasCurrentContext'
+import DrawingOptions from '@/components/DrawingOptions'
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
         <main className="flex grow">
           <CanvasComponent canvas={canvas} setCanvas={setCanvas} />
           <Sidebar canvas={canvas} setLayers={setLayers} layers={layers} setActiveLayer={setActiveLayer} activeLayer={activeLayer} />
+          <DrawingOptions canvas={canvas}/>
         </main>
       </div>
     // </canvasCurrentProvider>
