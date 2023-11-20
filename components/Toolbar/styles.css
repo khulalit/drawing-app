@@ -1,0 +1,35 @@
+:root{
+    --bg-toolbar : #2c2c2c;
+    --icon-size : 18px;
+    --icon-padding: 15px 11px;
+    --text-color: white;
+    --hover-color: black;
+    --file-color: rgb(235, 234, 234);
+}
+
+header{
+    background-color: var(--bg-toolbar);
+    color: var(--text-color);
+}
+.icon{
+    padding: var(--icon-padding);
+    color: white;
+    transition: transform 0.2s;
+}
+
+.icon:hover{
+    transform: translateY(-4px);
+    background-color: var(--hover-color);
+}
+
+.file-name{
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: var(--file-color);
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+    outline: none;
+    color: white;
+}
